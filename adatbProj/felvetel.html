@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="conttent-type" content="text/html"; charset="utf-8">
+</head>
+<body>
+<a href="project.php">Lekérdezések</a>
+<h1>Új anya felvétele</h1>
+<form method="POST" action="anya_felvetel.php" accept-charset="utf-8">
+    <table>
+        <tr>
+            <td>Név: </td>
+            <td><input type="text" name="név" /></td>
+        </tr>
+        <tr>
+            <td>Személyi szám: </td>
+            <td><input type="text" name="anyja_szig_szám" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Felvétel" /></td>
+        </tr>
+    </table>
+   </form>
+<a href="anya_torles.php">Anyja törlés</a><br>
+<a href="anya_modositas.php">Anyja módosítás</a>
+<h1>Új apa felvétele</h1>
+<form method="POST" action="apa_felvetel.php" accept-charset="utf-8">
+    <table>
+        <tr>
+            <td>Név: </td>
+            <td><input type="text" name="név" /></td>
+        </tr>
+        <tr>
+            <td>Személyi szám: </td>
+            <td><input type="text" name="apja_szig_szám" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Felvétel" /></td>
+        </tr>
+    </table>
+    <a href="apjatorles.php">Apja törlés</a><br>
+    <a href="apja_modositas.php">Apja módosítás</a>
+</form>
+<h1>Új személy felvétele</h1>
+<form method="POST" action="szemely_felvetel.php" accept-charset="utf-8">
+    <table>
+        <tr>
+            <td>Név: </td>
+            <td><input type="text" name="név" /></td>
+        </tr>
+        <tr>
+            <td>Személyi szám: </td>
+            <td><input type="text" name="szig_szám" /></td>
+        </tr>
+        <td>anyja_szig_száma: </td>
+        <td><input type="text" name="anyja_szig_szama" /></td>
+        </tr>
+        <td>apja szig szama: </td>
+        <td><input type="text" name="apja_szig_szama" /></td>
+        </tr>
+        <td>születési dátum: </td>
+        <td><input type="date" name="szuletesi_datum" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Felvétel" /></td>
+        </tr>
+    </table>
+    <a href="szemelytorles.php">Személy törlése</a>
+</form>
+<h1>Új esemény felvétele</h1>
+<form method="POST" action="esemeny_felvetel.php" accept-charset="utf-8">
+    <table>
+        <tr>
+            <td>Esemény neve: </td>
+            <td><input type="text" name="alkalom_neve" /></td>
+        </tr>
+        <td>Dátum: </td>
+        <td><input type="date" name="dátum" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Felvétel" /></td>
+        </tr>
+    </table>
+    <a href="esemeny_modositas.php">Esemény módosítás</a>
+</form>
+<h1>Új lakás felvétele</h1>
+<form method="POST" action="lakas_felvetel.php" accept-charset="utf-8">
+    <table>
+        <tr>
+            <td>Irányító száma: </td>
+            <td><input type="text" name="ir_szám" /></td>
+        </tr>
+        <tr>
+            <td>Város: </td>
+            <td><input type="text" name="város" /></td>
+        </tr>
+        <tr>
+            <td>Utca: </td>
+            <td><input type="text" name="utca" /></td>
+        </tr>
+        <tr>
+            <td>Házszám: </td>
+            <td><input type="text" name="házszám" /></td>
+        </tr>
+        <td>Lakás id: </td>
+        <td><input type="text" name="lid" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Felvétel" /></td>
+        </tr>
+    </table>
+    <a href="lakas_modositas.php">Lakás módosítás</a><br>
+    <a href="lakastorles.php">Lakás törlés</a>
+</form>
+<h1>Új lakhatás felvétele</h1>
+<form method="POST" action="lakik_felvetel.php" accept-charset="utf-8">
+    <table>
+        <tr>
+            <td>Lakó személyi száma: </td>
+            <td><input type="text" name="lako_szig_szám" /></td>
+        </tr>
+        <tr>
+            <td>Lakás id: </td>
+            <td><input type="text" name="lid" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Felvétel" /></td>
+        </tr>
+    </table>
+</form>
+<h1>Új résztvevő felvétele</h1>
+<form method="POST" action="reszt_vesz_felvetel.php" accept-charset="utf-8">
+    <table>
+        <tr>
+            <td>Alkalom neve: </td>
+            <td><input type="text" name="alkalom_neve" /></td>
+        </tr>
+        <tr>
+            <td>Résztvevő szig. száma: </td>
+            <td><input type="text" name="szemely_szig_szám" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Felvétel" /></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
